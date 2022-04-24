@@ -29,3 +29,8 @@ result = todos.delete_one({"tags": "c++"})
 result = todos.update_many({"tags": "python"}, {"$set": {"status": "closed"}})
 
 todo4 = {"name": "Nils", "text": "My first todo!", "status": "open", "tags": ["python", "coding"], "date": datetime.datetime.utcnow()}
+
+result = todos.find_one({"name": "David"})
+print(result)
+
+
